@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use '../utiles' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  line-height: 1.1;
+  background: var(--background);
+  color: var(--text-color);
+
+  @include respond-below(md) {
+  }
+}
+
+// images
+img {
+  // width: 100%; // image to be contained in it's coontainer
+}
+
+code,
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 0.2rem 0.624rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

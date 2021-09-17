@@ -1,0 +1,11 @@
+@use '../utiles' as *;
+
+.container {
+  max-width: rem(1125);
+  padding: 0 rem(25);
+  margin: 0 auto rem(46);
+
+  @include respond-below(sm) {
+    margin: 0 auto rem(16);
+  }
+}

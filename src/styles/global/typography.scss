@@ -1,0 +1,40 @@
+@use 'variables' as *;
+@use '../utiles' as *;
+
+// hedding top margin 0
+h1,
+h2,
+h3 {
+  color: red;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: rem(28);
+
+  @include respond-below(md) {
+    font-size: rem(24);
+  }
+}
+
+h2 {
+  font-size: rem(24);
+  margin-bottom: rem(24);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+//paragraph
+p {
+  margin: 0.625rem 0;
+}

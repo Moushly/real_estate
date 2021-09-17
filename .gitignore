@@ -1,0 +1,9 @@
+*.env
+node_modules/
+notes.md
+.DS_Store
+dist/
+_finalCode/
+*.xd
+*.fig
+*.sketch
