@@ -15,19 +15,13 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);
   line-height: 1.1;
-  background: var(--background);
-  color: var(--text-color);
-
-  @include respond-below(md) {
-  }
 }
 
 // images
-img {
-  // width: 100%; // image to be contained in it's coontainer
-}
+// img {
+//   // width: 100%; // image to be contained in it's coontainer
+// }
 
 code,
 pre {

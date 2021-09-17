@@ -5,7 +5,6 @@
 h1,
 h2,
 h3 {
-  color: red;
   font-weight: 700;
   margin-top: 0;
   line-height: 1.4;
@@ -13,10 +12,6 @@ h3 {
 
 h1 {
   font-size: rem(28);
-
-  @include respond-below(md) {
-    font-size: rem(24);
-  }
 }
 
 h2 {
@@ -32,6 +27,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 //paragraph

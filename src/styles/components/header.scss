@@ -1,29 +1,30 @@
 @use '../utiles' as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: rem(36);
-
-  @include respond-below(sm) {
-    justify-content: center;
-    flex-wrap: wrap;
+  background-color: var(--dark-bg);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(16);
   }
 
-  &__title {
-    @include respond-below(sm) {
-      margin-bottom: rem(25);
-      width: 100%;
-    }
-  }
-
-  &__subtitle {
-    font-size: rem(14);
+  &__logo {
+    text-transform: uppercase;
     font-weight: 700;
-    color: var(--text-color2);
+    font-size: rem(24);
+    color: var(--dark-text2);
   }
 
-  &__toggle {
+  &__navbar {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(16);
+    }
+
+    a {
+      color: var(--dark-text2);
+    }
   }
 }
