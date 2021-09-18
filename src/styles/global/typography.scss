@@ -3,20 +3,37 @@
 
 // hedding top margin 0
 h1,
-h2,
-h3 {
+h2 {
   font-weight: 700;
-  margin-top: 0;
-  line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: rem(28);
+  font-size: rem(48);
+  line-height: 1.2;
+  margin-bottom: rem(16);
 }
 
 h2 {
-  font-size: rem(24);
-  margin-bottom: rem(24);
+  font-size: rem(40);
+  color: var(--main-Secondry-1);
+  margin-bottom: rem(16);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: rem(22.5);
+  font-weight: 300;
+}
+
+h4 {
+  font-size: rem(19.2);
+  font-weight: 300;
+}
+
+h5 {
+  font-size: rem(16);
 }
 
 ul {
@@ -32,5 +49,10 @@ a:active {
 
 //paragraph
 p {
-  margin: 0.625rem 0;
+  margin: 0 0 rem(16);
+}
+
+p.large {
+  font-size: rem(20);
+  font-weight: 300;
 }

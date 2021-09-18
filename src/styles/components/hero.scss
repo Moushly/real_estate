@@ -1,0 +1,40 @@
+@use '../utiles' as *;
+
+.hero {
+  background: url('../img/bg_5.jpg') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+
+  .fade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #343a40, $alpha: 0.8);
+    z-index: 1;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    margin: rem(-75) auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: var(--grey-Light);
+    width: rem(500);
+    text-align: center;
+
+    p {
+      line-height: 1.5em;
+      font-weight: 300;
+      font-size: rem(16);
+    }
+  }
+}
