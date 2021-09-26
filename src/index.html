@@ -92,60 +92,85 @@
     <section class="properties">
       <div class="container">
         <h2>properties</h2>
-        <div class="properties__wrapper flex">
-          <div class="properties__details">
-            <img src="./img/breakfast-1.jpg" alt="" />
-            <div class="properties__data">
-              <p class="price">3,400,000</p>
-              <span class="beds">6 beds</span>
-              <span class="baths">4 baths</span>
-              <span class="sqm">4,250 sqm</span>
-              <address>480 12th, Unit 14, San Francisco, CA</address>
-            </div>
+        <div class="properties__wrapper carousel">
+          <button class="carousel__btn carousel__btn--left is-hidden">
+            <img src="./img/chevron-left.svg" alt="Left" />
+          </button>
+
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="properties__details carousel__slide current-slide">
+                <img class="carousel__img" src="./img/breakfast-1.jpg" alt="" />
+
+                <div class="properties__data">
+                  <p class="price">3,400,000</p>
+                  <span class="beds">6 beds</span>
+                  <span class="baths">4 baths</span>
+                  <span class="sqm">4,250 sqm</span>
+                  <address>480 12th, Unit 14, San Francisco, CA</address>
+                </div>
+              </li>
+
+              <li class="properties__details carousel__slide">
+                <img class="carousel__img" src="./img/breakfast-2.jpg" alt="" />
+
+                <div class="properties__data">
+                  <p class="price">3,400,000</p>
+                  <span class="beds">6 beds</span>
+                  <span class="baths">4 baths</span>
+                  <span class="sqm">4,250 sqm</span>
+                  <address>480 12th, Unit 14, San Francisco, CA</address>
+                </div>
+              </li>
+
+              <li class="properties__details carousel__slide">
+                <img class="carousel__img" src="./img/breakfast-3.jpg" alt="" />
+
+                <div class="properties__data">
+                  <p class="price">3,400,000</p>
+                  <span class="beds">6 beds</span>
+                  <span class="baths">4 baths</span>
+                  <span class="sqm">4,250 sqm</span>
+                  <address>480 12th, Unit 14, San Francisco, CA</address>
+                </div>
+              </li>
+
+              <li class="properties__details carousel__slide">
+                <img class="carousel__img" src="./img/breakfast-4.jpg" alt="" />
+
+                <div class="properties__data">
+                  <p class="price">3,400,000</p>
+                  <span class="beds">6 beds</span>
+                  <span class="baths">4 baths</span>
+                  <span class="sqm">4,250 sqm</span>
+                  <address>480 12th, Unit 14, San Francisco, CA</address>
+                </div>
+              </li>
+
+              <li class="properties__details carousel__slide">
+                <img class="carousel__img" src="./img/breakfast-5.jpg" alt="" />
+
+                <div class="properties__data">
+                  <p class="price">3,400,000</p>
+                  <span class="beds">6 beds</span>
+                  <span class="baths">4 baths</span>
+                  <span class="sqm">4,250 sqm</span>
+                  <address>480 12th, Unit 14, San Francisco, CA</address>
+                </div>
+              </li>
+            </ul>
           </div>
 
-          <div class="properties__details">
-            <img src="./img/breakfast-2.jpg" alt="" />
-            <div class="properties__data">
-              <p class="price">3,400,000</p>
-              <span class="beds">6 beds</span>
-              <span class="baths">4 baths</span>
-              <span class="sqm">4,250 sqm</span>
-              <address>480 12th, Unit 14, San Francisco, CA</address>
-            </div>
-          </div>
+          <button class="carousel__btn carousel__btn--right">
+            <img src="./img/chevron-right.svg" alt="Right" />
+          </button>
 
-          <div class="properties__details">
-            <img src="./img/breakfast-3.jpg" alt="" />
-            <div class="properties__data">
-              <p class="price">3,400,000</p>
-              <span class="beds">6 beds</span>
-              <span class="baths">4 baths</span>
-              <span class="sqm">4,250 sqm</span>
-              <address>480 12th, Unit 14, San Francisco, CA</address>
-            </div>
-          </div>
-
-          <div class="properties__details">
-            <img src="./img/breakfast-4.jpg" alt="" />
-            <div class="properties__data">
-              <p class="price">3,400,000</p>
-              <span class="beds">6 beds</span>
-              <span class="baths">4 baths</span>
-              <span class="sqm">4,250 sqm</span>
-              <address>480 12th, Unit 14, San Francisco, CA</address>
-            </div>
-          </div>
-
-          <div class="properties__details">
-            <img src="./img/breakfast-5.jpg" alt="" />
-            <div class="properties__data">
-              <p class="price">3,400,000</p>
-              <span class="beds">6 beds</span>
-              <span class="baths">4 baths</span>
-              <span class="sqm">4,250 sqm</span>
-              <address>480 12th, Unit 14, San Francisco, CA</address>
-            </div>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
           </div>
         </div>
         <button class="rounded properties__btn">
@@ -153,11 +178,12 @@
         </button>
       </div>
     </section>
+
     <!-- Properties section End -->
 
     <!-- agents section Start -->
     <section class="agents">
-      <div class="container">
+      <div class="">
         <h2>agents</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -316,44 +342,60 @@
     <section class="testimonials">
       <div class="container">
         <h2>what our clients are saying</h2>
-        <div class="testimonials__wrapper">
-          <div class="testimonials__client">
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              impedit quidem neque est laudantium hic repellat perspiciatis!
-              Itaque blanditiis doloribus magnam, voluptas et consequatur odit
-              dolor facilis molestias veritatis veniam?
-            </blockquote>
-            <div class="testimonials__client-details">
-              <img src="./img/person_1.jpg" alt="" />
-              <p>nick andros</p>
-            </div>
-          </div>
+        <div class="testimonials__wrapper carousel">
+          <button class="carousel__btn carousel__btn--left">
+            <img src="./img/chevron-left.svg" alt="Left" />
+          </button>
 
-          <div class="testimonials__client">
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              impedit quidem neque est laudantium hic repellat perspiciatis!
-              Itaque blanditiis doloribus magnam, voluptas et consequatur odit
-              dolor facilis molestias veritatis veniam?
-            </blockquote>
-            <div class="testimonials__client-details">
-              <img src="./img/person_2.jpg" alt="" />
-              <p>nick andros</p>
-            </div>
-          </div>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="testimonials__client carousel__slide current-slide">
+                <blockquote>
+                  ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+                  impedit quidem neque est laudantium hic repellat perspiciatis!
+                  Itaque blanditiis doloribus magnam, voluptas et consequatur
+                  odit dolor facilis molestias veritatis veniam?
+                </blockquote>
+                <div class="testimonials__client-details">
+                  <img src="./img/person_1.jpg" alt="" />
+                  <p>nick andros</p>
+                </div>
+              </li>
 
-          <div class="testimonials__client">
-            <blockquote>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              impedit quidem neque est laudantium hic repellat perspiciatis!
-              Itaque blanditiis doloribus magnam, voluptas et consequatur odit
-              dolor facilis molestias veritatis veniam?
-            </blockquote>
-            <div class="testimonials__client-details">
-              <img src="./img/person_3.jpg" alt="" />
-              <p>nick andros</p>
-            </div>
+              <li class="testimonials__client carousel__slide">
+                <blockquote>
+                  Itaque blanditiis doloribus magnam, voluptas et consequatur
+                  odit dolor facilis molestias veritatis veniam? Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Nisi impedit
+                  quidem neque est laudantium hic repellat perspiciatis!
+                </blockquote>
+                <div class="testimonials__client-details">
+                  <img src="./img/person_2.jpg" alt="" />
+                  <p>nick andros</p>
+                </div>
+              </li>
+
+              <li class="testimonials__client carousel__slide">
+                <blockquote>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+                  impedit quidem neque est laudantium hic repellat perspiciatis!
+                  Itaque blanditiis doloribus magnam, voluptas et consequatur
+                  odit dolor facilis molestias veritatis veniam?
+                </blockquote>
+                <div class="testimonials__client-details">
+                  <img src="./img/person_3.jpg" alt="" />
+                  <p>nick andros</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__btn carousel__btn--right">
+            <img src="./img/chevron-right.svg" alt="Right" />
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
           </div>
         </div>
       </div>

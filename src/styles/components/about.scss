@@ -1,0 +1,24 @@
+@use '../utiles' as *;
+
+.about {
+  margin: rem(16) 0;
+
+  &__wrapper {
+    &.flex > img {
+      width: 47%;
+    }
+
+    &.flex > div {
+      width: 40%;
+    }
+
+    ul {
+      padding-left: rem(20);
+      margin-bottom: rem(64);
+    }
+
+    li {
+      margin: rem(10) 0;
+    }
+  }
+}

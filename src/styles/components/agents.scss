@@ -1,0 +1,28 @@
+@use '../utiles' as *;
+
+.agents {
+  margin: rem(64) 0 rem(96);
+  padding: rem(40) rem(96);
+  &__wrapper.flex {
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 32%;
+    background: var(--assit-light);
+    margin-bottom: rem(32);
+    img {
+      width: 100%;
+    }
+
+    h3,
+    p {
+      color: var(--main-Secondry-2);
+      padding: 0 rem(20);
+    }
+
+    p {
+      color: var(--main-Primary-Dark);
+    }
+  }
+}

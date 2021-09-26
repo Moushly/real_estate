@@ -1,0 +1,15 @@
+@use '../utiles' as *;
+
+.properties {
+  position: relative;
+  margin: rem(64) 0 rem(128);
+  text-align: center;
+
+  h2 {
+    margin-bottom: rem(48);
+  }
+
+  &__btn {
+    margin-top: rem(60);
+  }
+}
